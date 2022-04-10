@@ -8,19 +8,11 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.Select;
 import userinterface.UTestSignUpPage;
 
 public class SignUp implements Task {
 
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String month;
-    private String day;
-    private    String year;
-
-    public static SignUp onThePage() {
+       public static SignUp onThePage() {
         return Tasks.instrumented(SignUp.class);
     }
 
